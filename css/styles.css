@@ -1,0 +1,60 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.embed-responsive{
+  position: relative;
+}
+
+.embed-responsive::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.informacion{
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  left: 20%;
+}
+
+.text-dark{
+  color: #f7455f !important;
+}
+
+.informacion h1 span{
+  font-weight: 900;
+}
+
+.nosotros .info span{
+  text-shadow: 1px 1px 10px #6c757d;
+}
+
+.lineup{
+  background-color: #f7455f !important;
+}
+
+.lineup .escenario1{
+  background-color: #e5cd42;
+}
+
+.lineup .escenario2{
+  background-color: #4db780;
+}
+
+.striped li:nth-child(2n){
+  background-color: #939937;
+}
+
+@media (max-width: 992px){
+  .embed-responsive{
+    background-image: url('../img/banda.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+}
