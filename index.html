@@ -7,10 +7,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar_principal" data-offset="50">
     <div class="embed-responsive embed-responsive-16by9">
       <video src="video/concierto.mp4" class="d-none d-lg-block embed-responsive-item" autoplay loop>
       </video>
+      <nav id="navbar_principal" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">FDM GDL <span class="font-weight-bold">2018</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link px-2 text-light" href="#lineup">LineUp</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 text-light" href="#galeria">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 text-light" href="#boletos">Boletos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="container justify-content-center">
             <div class="informacion text-center text-md-left text-light">
               <h1 class="text-center display-4">Festival de musica <span class="p-3 shadow bg-light d-block d-md-inline-block text-dark">2018 GDL</span></h1>
@@ -35,7 +56,7 @@
         </div>
       </div>
     </section>
-    <section class="lineup">
+    <section id="lineup" class="lineup pb-5">
       <div class="container">
         <div class="row py-4 text-light">
           <div class="col-md-12 text-center">
@@ -47,7 +68,7 @@
           <div class="col-md-5 escenario1 p-0">
             <h3 class="text-center mt-4">Escenario 1</h3>
             <div class="row justify-content-center mb-4">
-              <div class="col-md-4">
+              <div class="col-4">
                 <img src="img/guitarra.png" class="img-fluid" alt="">
               </div>
             </div>
@@ -59,8 +80,240 @@
               <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
             </ul>
           </div>
-          <div class="col-md-5 escenario2 p-4">
-            <h3 class="text-center">Escenario 2</h3>
+          <div class="col-md-5 escenario2 p-0">
+            <h3 class="text-center mt-4">Escenario 2</h3>
+            <div class="row justify-content-center mb-4">
+              <div class="col-4">
+                <img src="img/dj.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <ul class="list-unstyled m-0 striped">
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-between">
+          <div class="col-md-5 escenario2 p-0">
+            <h3 class="text-center mt-4">Escenario 1</h3>
+            <div class="row justify-content-center mb-4">
+              <div class="col-4">
+                <img src="img/guitarra.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <ul class="list-unstyled m-0 striped">
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+            </ul>
+          </div>
+          <div class="col-md-5 escenario1 p-0">
+            <h3 class="text-center mt-4">Escenario 2</h3>
+            <div class="row justify-content-center mb-4">
+              <div class="col-4">
+                <img src="img/dj.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <ul class="list-unstyled m-0 striped">
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+              <li class="p-3"><span class="font-weight-bold">24:00</span> | Metallica</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="galeria" class="container galeria my-5">
+      <h2 class="text-center mb-4">Galeria</h2>
+      <div class="row">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal"  data-target="#img1">
+            <img src="img/thumbs/1.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/1.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img2">
+            <img src="img/thumbs/2.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/2.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img3">
+            <img src="img/thumbs/3.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/3.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img4">
+            <img src="img/thumbs/4.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/4.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img5">
+            <img src="img/thumbs/5.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/5.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img6">
+            <img src="img/thumbs/6.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/6.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img12">
+            <img src="img/thumbs/12.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/12.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img11">
+            <img src="img/thumbs/11.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/11.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img10">
+            <img src="img/thumbs/10.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/10.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img9">
+            <img src="img/thumbs/9.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/9.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal" data-target="#img8">
+            <img src="img/thumbs/8.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/8.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a href="#" data-toggle="modal"  data-target="#img7">
+            <img src="img/thumbs/7.jpg" class="img-fluid mb-3" alt="">
+          </a>
+          <div class="modal fade" id="img7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/grande/7.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faltan text-light py-5">
+      <div class="container">
+        <h2 class="display-3 text-center font-weight-bold">FALTAN</h2>
+        <div class="row justify-content-center">
+          <div id="tiempo" class="display-4 text-center font-weight-bold"></div>
+        </div>
+      </div>
+    </section>
+    <section id="boletos" class="boletos text-light py-5">
+      <div class="container">
+        <h2 class="text-center">Boletos</h2>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <h3 class="mb-4">1 Día</h3>
+            <ul class="list-group">
+              <li class="list-group-item boleto_header">INCLUYE</li>
+              <li class="list-group-item text-black">Acceso Viernes y Sabado</li>
+              <li class="list-group-item text-black">Acceso a los escenarios</li>
+              <li class="list-group-item boleto_footer h1">$ 100</li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-center">
+            <h3 class="mb-4">2 Días</h3>
+            <ul class="list-group">
+              <li class="list-group-item boleto_header">INCLUYE</li>
+              <li class="list-group-item text-black">Acceso Viernes y Sabado</li>
+              <li class="list-group-item text-black">Acceso a los escenarios</li>
+              <li class="list-group-item text-black">Camisa del evento</li>
+              <li class="list-group-item boleto_footer h1">$ 180</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-12 text-center text-light">
+            <p>Ambos paquetes incluyen acceso a la comida, bebidas y baños. Acceso desde las 14:00 Hrs.</p>
           </div>
         </div>
       </div>
@@ -69,5 +322,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

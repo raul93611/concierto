@@ -1,9 +1,31 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Lato', sans-serif;
+  position: relative;
 }
 
 .embed-responsive{
   position: relative;
+}
+
+#navbar_principal .nav-item .active{
+  background-color: #63188e !important;
+  border-radius: 5px;
+}
+
+.verde{
+  background-color: #4db780 !important;
+}
+
+.transparent{
+  background-color: transparent !important;
+}
+
+.fixed-top{
+  transition: all .3s ease;
 }
 
 .embed-responsive::after{
@@ -26,6 +48,18 @@ body{
   color: #f7455f !important;
 }
 
+.text-black{
+  color: #343a40 !important;
+}
+
+.boletos .boleto_header{
+  background-color: #63188e;
+}
+
+.boletos .boleto_footer{
+  background-color: #4db780;
+}
+
 .informacion h1 span{
   font-weight: 900;
 }
@@ -34,7 +68,7 @@ body{
   text-shadow: 1px 1px 10px #6c757d;
 }
 
-.lineup{
+.lineup, .boletos{
   background-color: #f7455f !important;
 }
 
@@ -48,6 +82,10 @@ body{
 
 .striped li:nth-child(2n){
   background-color: #939937;
+}
+
+.faltan{
+  background-color: #4db780;
 }
 
 @media (max-width: 992px){
